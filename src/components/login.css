@@ -1,0 +1,75 @@
+body {
+    /* Remove background image and set background color */
+    background-color: #f8f9fa; /* Change to your desired background color */
+    margin: 0; /* Remove default body margin */
+}
+
+.gradient-form {
+    background-image: linear-gradient(to bottom, transparent 50%, #eee 50%);
+    background-size: 100% 200%;
+}
+
+.card {
+    border: none;
+}
+
+.text-white {
+    color: white;
+}
+
+/* Decrease the size of the login card */
+.col-lg-12 {
+    flex: 0 0 100%; /* Change the size as needed */
+}
+
+.col-lg-6 {
+    flex: 0 0 50%; /* Change the size as needed */
+}
+
+/* Header styles */
+header {
+    background-color:#009688; 
+    color: white; /* Set text color */
+    padding: 10px; /* Adjust padding as needed */
+    position: fixed; /* Make the header sticky at the top */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 999; /* Ensure it's above other content */
+}
+
+.form-section {
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLhTJ2xLyUln0blr7JROp8zkp8OoYBsLBP2A&usqp=CAU');        background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 60px); /* Calculate the height of the form section minus header height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center-align text and inputs */
+.form-container {
+  width: 200% !important; /* Increase the width to your desired value, e.g., 80% */
+
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for the form */
+  padding: 40px; /* Adjust padding as needed to increase the card size */
+  border-radius: 10px; /* Add rounded corners to the form */
+  text-align: center; /* Center-align text */
+}
+
+.form-container p {
+  margin-top: 20px; /* Adjust the margin for the "Please login" text */
+}
+
+.form-container .form-outline {
+  margin: 0 auto; /* Center-align form inputs */
+  max-width: 300px; /* Adjust the maximum width of form inputs */
+}
+
+.dis{
+  background-image: url("E:\fewd\message\messaging\src\components\vaccine.png");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 350px); /* Calculate the height of the form section minus header height */
+  display: flex;
+  justify-content: center;
+  align-items: center;}
