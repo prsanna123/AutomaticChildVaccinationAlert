@@ -47,6 +47,7 @@
 import React,{useContext,useEffect,useState} from 'react'
 // import noteContext from "../context/notes/noteContext"
 import {Link} from "react-router-dom"
+import Card from './Card';
 
 export default function Student(userData) {
     const [data,setData]=useState([]);
@@ -66,28 +67,25 @@ export default function Student(userData) {
         <div className="container">
             <h1> Sending message to parent</h1>
               <div className="col-12">
-                {/* {
-                  data.map((data,i)=>
-                  <li key={i}>{data}</li>)
-                } */}
                 
-      {data.map(i=>{
-        return(
-          <div>
-          <div className="row border">
-          <div className="card">
-       <i className="fa fa-user-o fa-10x mt-2" aria-hidden="true" ></i>
-        <div className="card-body">
-       
-        <p className="card-text">{i._id}     {i.parent_name}    {i.phone_num}   {i.email}</p>
+      
         
-      </div>
-    </div>
+          <div>
+          <div className="card-container">
+            {
+              data.map((card,index)=>(
+                <Card
+                key={index}
+                title={card.parent_name}
+                description={card.phone_num}
+                email={card.email}/>
+              ))
+            }
     </div>
     
     </div>
-        )
-      })}
+        
+     
       
       </div>
     </div>

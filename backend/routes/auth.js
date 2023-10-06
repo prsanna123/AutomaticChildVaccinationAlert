@@ -162,7 +162,8 @@ const transporter = nodemailer.createTransport({
     pass: 'iutglqtmhsvcseub', // Replace with your password
   },
 });
-
+vaccines=['polio','chicken pox'];
+k=0
 router.get('/getchilddata',async (req,res)=>{
     try{
         console.log("hospital");
@@ -196,7 +197,7 @@ router.get('/getchilddata',async (req,res)=>{
             const mobileNumber="+91"+dat[i].get('phone_num');
             const parent=dat[i].get('parent_name');
             const child=dat[i].get('name');
-            const messageContent="Dear "+parent+" Your daughter has vaccination "+child+" scheduled on "+currentDate
+            const messageContent="Dear "+parent+" Your daughter has polio has "+vaccines[k]+" vaccination"+child+" scheduled on "+currentDate
             console.log(mobileNumber+messageContent)
             try {
                 console.log(mobileNumber)
@@ -245,7 +246,7 @@ router.get('/getchilddata',async (req,res)=>{
             const email=emails[i].get('email')
             const parent=emails[i].get('parent_name');
             const child=emails[i].get('name');
-            const msg="Dear "+parent+" Your daughter has vaccination "+child+" scheduled on "+currentDate
+            const msg="Dear "+parent+" Your daughter has "+vaccines[k]+" vaccination "+child+" scheduled on "+currentDate
             const mailOptions = {
                 from: 'clp05154@gmail.com', // Replace with your email
                 to: email,

@@ -59,7 +59,7 @@
 //             required
 //           />
 //         </div>
-        
+
 //         <div>
 //           <label htmlFor="parentName">Parent's Name:</label>
 //           <input
@@ -113,13 +113,13 @@ function Hospital(props) {
     phoneNumber: '',
     birthDate: '',
     hospitalname: '',
-    bloodgroup:'',
-    weight:'',
-    email:'',
-    address:'',
-    age:'',
-    surname:'',
-    time:'',
+    bloodgroup: '',
+    weight: '',
+    email: '',
+    address: '',
+    age: '',
+    surname: '',
+    time: '',
   });
 
   const handleChange = (e) => {
@@ -132,13 +132,13 @@ function Hospital(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { parentName, phoneNumber, birthDate, hospitalname,bloodgroup,weight,email,address,age,surname,time } = formData
+    const { parentName, phoneNumber, birthDate, hospitalname, bloodgroup, weight, email, address, age, surname, time } = formData
     const response = await fetch("http://localhost:5000/api/auth/addchild", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ hospitalname, parentName, phoneNumber, birthDate,bloodgroup,weight,email,address,age,surname,time  })
+      body: JSON.stringify({ hospitalname, parentName, phoneNumber, birthDate, bloodgroup, weight, email, address, age, surname, time })
     })
     const json = await response.json()
 
@@ -153,14 +153,14 @@ function Hospital(props) {
         phoneNumber: '',
         birthDate: '',
         hospitalname: '',
-        bloodgroup:'',
-        weight:'',
-        email:'',
-        address:'',
-        age:'',
-        surname:'',
-        time:'',
-              })
+        bloodgroup: '',
+        weight: '',
+        email: '',
+        address: '',
+        age: '',
+        surname: '',
+        time: '',
+      })
     }
     else {
       console.log("error occured in adding child data")
@@ -169,27 +169,28 @@ function Hospital(props) {
 
   return (
     <div>
-      <div className="container mt-5">
+      <div className="container mt-3">
         <div className="card">
           <div className="card-header text-center">
             <h2 id="mainheader">Registration Form</h2>
           </div>
           <div className="card-body">
             <form onSubmit={handleSubmit}>
-              <div>
-                <label htmlFor="hospname">HospitalName:</label>
+              <div className="form-group col-md-5">
+                <label htmlFor="hospname" className="d-flex">Hospital Name</label>
                 <input
-                 className="form-control"
+                  className="form-control"
                   type="text"
                   id="hname"
                   name="hospitalname"
                   value={formData.hospitalname}
                   onChange={handleChange}
+                  placeholder='Hospital Name'
                   required
                 />
               </div>
-              <br/> 
-              
+              <br />
+
 
               {/* <div>
           <label htmlFor="parentName">Parent's Name:</label>
@@ -226,7 +227,7 @@ function Hospital(props) {
         </div> */}
 
               {/* <form> */}
-              <h5>Parent Information</h5>
+              <h5 className='d-flex'>Parent Information :</h5><br />
               <div className="form-row">
                 <div className="form-group col-md-5">
                   <label htmlFor="surname" className="d-flex">Surname</label>
@@ -259,7 +260,7 @@ function Hospital(props) {
                 <div className="form-group col-md-3">
                   <label htmlFor="age" className="d-flex">Age</label>
                   <input
-                     className="form-control"
+                    className="form-control"
                     type="number"
                     placeholder="Age"
                     id="age"
@@ -293,6 +294,7 @@ function Hospital(props) {
                     name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={handleChange}
+                    placeholder='Phone Number'
                     required
                   />
                 </div>
@@ -308,11 +310,12 @@ function Hospital(props) {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    
+
+
                   />
                 </div>
-              </div>
-              <h5>Child Information</h5>
+              </div><br></br>
+              <h5 className='d-flex'>Child Information :</h5><br />
               <div className="form-row">
                 <div className="form-group col-md-6">
                   <label htmlFor="birthDate" className="d-flex">Child Date Of Birth</label>
@@ -378,32 +381,30 @@ function Hospital(props) {
                 </div>
               </div>
               <div className='row'>
-                
-                <div className='col-2 justify-content-flex-start'>
-
-<Link to="/wel">
-<button className='btn btn-secondary'>back</button>
-</Link>
-
+                <div className='col-7'></div>
+                <div className='col-5 d-flex justify-content-end'>
+                  <div className='row '>
+                    <div className='col-6'>
+                      <button type="submit" className="btn btn-primary d-flex">
+                        Submit
+                      </button>
+                    </div>
+                    <div className='col-6'>
+                      <Link to="/wel">
+                        <button className='btn btn-secondary d-flex'>Back</button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-                
-                <div className='col-8 align-center'>
-               
-              <button type="submit" className="btn btn-primary">
-                Submit
-              </button>
               </div>
-              
-                </div>
-            
-              
+
               {/* </form> */}
 
               {/* </div> */}
 
               {/* <button type="submit">Submit</button> */}
             </form>
-           
+
 
           </div>
         </div>

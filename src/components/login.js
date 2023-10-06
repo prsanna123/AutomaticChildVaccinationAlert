@@ -111,7 +111,7 @@ const Login = (props) => {
         //         <button type="submit" className="btn btn-primary">Submit</button>
         //     </form>
         // </div>
-        <div>
+        <div className='custom'>
             <section className="form-section">
                 <div className="row">
                     <div className="col-lg-12 d-flex justify-content-center" >
@@ -129,7 +129,6 @@ const Login = (props) => {
                                 </div>
                                 <div className="text-center pt-1 mb-5 pb-1">
                                     <button type="submit" className="btn btn-primary">Submit</button>
-                                    <a className="text-muted" href="#!">Forgot password?</a>
                                 </div>
 
                             </form>
