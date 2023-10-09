@@ -39,28 +39,28 @@ const SignUp = (props) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
   }
   return (
-    <div className="container fluid">
-      <h2 className="my-5">Create account</h2>
+    <div className="container custom ">
+     <h2 className="my-5 mx-5">Create account</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-3">
-          <label htmlFor="name" className="form-label custom">Name</label>
-          <input type="text" className="custom form-control" id="name" name="name" placeholder='Hospital Name' onChange={onChange} aria-describedby="emailHelp" />
-          <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+          <label htmlFor="name" className="form-label mx-5">Name*</label>
+          <input type="text" className="custom form-control" id="name" name="name" placeholder='Hospital Name ' onChange={onChange} aria-describedby="emailHelp" />
+          <div id="emailHelp" className="form-text mx-5">We'll never share your email with anyone else.</div>
         </div>
         <div className=" form-group mb-3">
-          <label htmlFor="email" className="form-label custom">Email address</label>
-          <input type="email" className="custom form-control" id="email" name="email" onChange={onChange} aria-describedby="emailHelp" />
-          <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+          <label htmlFor="email" className="form-label mx-5">Email address*</label>
+          <input type="email" className="custom form-control" id="email" name="email" placeholder='Email Address' onChange={onChange} aria-describedby="emailHelp" />
+          <div id="emailHelp" className="form-text mx-5">We'll never share your email with anyone else.</div>
         </div>
         <div className="form-group mb-3">
-          <label htmlFor="password" className="form-label custom">Password</label>
-          <input type="password" className="custom form-control" name="password" onChange={onChange} minLength={5} required id="password" />
+          <label htmlFor="password" className="form-label mx-5">Password*</label>
+          <input type="password" className="custom form-control" name="password" placeholder='Password' onChange={onChange} minLength={5} required id="password" />
         </div>
         <div className="mb-3">
-          <label htmlFor="cpassword" className="form-label custom">Confirm Password</label>
-          <input type="cpassword" className="custom form-control" name="cpassword" onChange={onChange} id="cpassword" minLength={5} required />
+          <label htmlFor="cpassword" className="form-label mx-5">Confirm Password*</label>
+          <input type="cpassword" className="custom form-control" name="cpassword"  placeholder='Confirm Password' onChange={onChange} id="cpassword" minLength={5} required />
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary mx-5">Submit</button>
       </form>
     </div>
   )

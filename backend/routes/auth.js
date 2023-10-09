@@ -112,7 +112,7 @@ router.post('/login', [
     body('phonenumber','Enter 10 digit phone  number').isLength({equal:10}),
     body('dateofbirth','enter DOB')
 
-  ],async(req,res)=>{
+  ],fetchuser,async(req,res)=>{
     const errors=validationResult(req);
     let success=false
     console.log(req.body.birthDate)

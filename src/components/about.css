@@ -1,0 +1,18 @@
+.custom.card-body{
+    text-align: start;
+    background-color: aliceblue;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.137);
+    border-radius: 0.4rem;
+}
+.about.container{
+    background-color: #3e819987;
+    width: 80%;
+    border-radius: 0.4rem !important;
+}
+.text-center{
+    color: aliceblue;
+}
+p.custom{
+    text-align: center;
+    color: azure !important;
+}

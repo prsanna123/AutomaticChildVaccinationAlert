@@ -6,9 +6,9 @@ const Card = ({ title, description, email }) => {
   return (
     <div  id="cards">
       <div  id="cards-content">
-        <h3>{title}</h3>
+        <h3>Name:{title}</h3>
         <p>{description}</p>
-        <p>{email}</p>
+        <p>Email:{email}</p>
       </div>
     </div>
   );

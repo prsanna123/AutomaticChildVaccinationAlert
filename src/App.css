@@ -13,6 +13,14 @@
   }
 }
 
+.card{
+  width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    /* background-color: #efefef00; */
+    /* border: #bcd8f1 1px solid !important; */
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,8 +32,15 @@
   color: white;
 }
 
+#mainheader{
+  color: #282c34;
+}
+
 .App-link {
   color: #61dafb;
+}
+.custom.bg{
+  
 }
 
 @keyframes App-logo-spin {
@@ -36,17 +51,16 @@
     transform: rotate(360deg);
   }
 }
-
-/* src/App.css */
-.App {
-  text-align: center;
+body{
+  background-color: #bcd8f1;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-color: coral;
-  background-color:burlywood;
-}
+@media (min-width: 768px){
 
+  .ml-md-n5, .mx-md-n5 {
+    margin-left:0% !important;
+  }
+  }
+  .custom.row{
+    margin-left:10% !important;
+  }
