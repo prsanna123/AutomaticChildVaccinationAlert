@@ -10,7 +10,7 @@ const WelcomePage = () => {
  
     <div className="row mx-md-n5 custom">
       {/* <div className="col px-md-5"> */}
-          <div className="card w-30 px-5 ml-6 mr-5 border bg-light">
+          <div className="card cust w-30 px-5 ml-6 mr-5 border bg-light">
           <img className="card-img-top" src="https://imgs.search.brave.com/X5Wgrt6JCnMNXBtTELO-C11U6b_RAkwTLP0Pxac_nQE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LXBsdXMtMTQzOTcz/MS0xMjE0MzAzLnBu/Zz9mPXdlYnAmdz0x/Mjg" alt="Card image cap"/>
           <div className="card-body">
             <p className="card-text">Add the child's details</p>
@@ -21,7 +21,7 @@ const WelcomePage = () => {
           </div>
       {/* </div> */}
       {/* <div className="col px-md-5"> */}
-        <div className="card w-30 ml-5 px-md-5  mr-5 border bg-light">
+        <div className="card cust w-30 ml-5 px-md-5  mr-5 border bg-light">
           <img className="card-img-top" src="https://imgs.search.brave.com/fd-orxy1dY0gB2qFIWrTo1iKjjM_y7sBMb1yhoRE8fw/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvMjk4My8yOTgz/Nzg4LnBuZw" alt="Card image cap"/>
           <div className="card-body">
             <p className="card-text">Send the vaccination alerts</p>

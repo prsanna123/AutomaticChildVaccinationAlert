@@ -32,6 +32,14 @@
   color: white;
 }
 
+.card.cust{
+  width: 30%;
+    justify-content: center;
+    margin-left: 10%;
+    /* background-color: #efefef00; */
+    /* border: #bcd8f1 1px solid !important; */
+}
+
 #mainheader{
   color: #282c34;
 }

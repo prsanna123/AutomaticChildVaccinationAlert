@@ -8,7 +8,7 @@ const Card = ({ title, description, email }) => {
       <div  id="cards-content">
         <h3>Name:{title}</h3>
         <p>{description}</p>
-        <p>Email:{email}</p>
+        {email.length!=0?<p>Email:{email}</p>:<p></p>}
       </div>
     </div>
   );

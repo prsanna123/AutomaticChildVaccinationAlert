@@ -65,7 +65,7 @@ export default function Student(userData) {
     return (
       <div>
         <div className="container">
-            <h1> Sending message to parent</h1>
+            <h1>  Parents Of Vaccination Alert Sent</h1>
               <div className="col-12">
                 
       
