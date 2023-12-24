@@ -3,7 +3,8 @@ const mongoose=require("mongoose");
 //     useNewUrlParser:true,
 //     useUnifiedTopology:true
 // })
-const mongoURI="mongodb://0.0.0.0:27017/project"
+// const mongoURI="mongodb://0.0.0.0:27017/project"
+const mongoURI="mongodb+srv://Lakshmi:MOD9vx7y6NR4TIsV@cluster0.dmhrq.mongodb.net/?retryWrites=true&w=majority"
 const connectDB = async () => {
     try {
         mongoose.set('strictQuery', false)
