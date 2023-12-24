@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-const host = "http://localhost:5000"
+const host = "https://automatic-child-vaccination-alert-35ol.vercel.app/"
 const MessageForm = () => {
   const [mobileNumber, setMobileNumber] = useState('');
   const [messageContent, setMessageContent] = useState('');
