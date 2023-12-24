@@ -104,7 +104,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
-const host = "http://localhost:5000"
+const host = "https://automatic-child-vaccination-alert-35ol.vercel.app/"
 const VerificationForm = () => {
   const [email, setEmail] = useState('');
 

@@ -133,7 +133,7 @@ function Hospital(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { parentName, phoneNumber, birthDate, hospitalname, bloodgroup, weight, email, address, age, surname, time } = formData
-    const response = await fetch("http://localhost:5000/api/auth/addchild", {
+    const response = await fetch("https://automatic-child-vaccination-alert-35ol.vercel.app/api/auth/addchild", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
