@@ -52,7 +52,7 @@ import Card from './Card';
 export default function Student(userData) {
     const [data,setData]=useState([]);
     useEffect(()=>{
-      fetch("http://localhost:5000/api/child/getchilddata",{
+      fetch("https://automatic-child-vaccination-alert-35ol.vercel.app/api/child/getchilddata",{
         method:"GET",
       })
       .then((res)=>res.json())
