@@ -69,7 +69,7 @@ const Login = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/api/auth/login", {
+        const response = await fetch("https://automatic-child-vaccination-alert-35ol.vercel.app/api/auth/login", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -95,22 +95,7 @@ const Login = (props) => {
     }
 
     return (
-        // <div className="mt-3">
-        //     <h2>Login</h2>
-        //     <form  onSubmit={handleSubmit}>
-        //         <div className="mb-3">
-        //             <label htmlFor="name" className="form-label">Hospital name</label>
-        //             <input type="name" className="form-control" value={credentials.name} onChange={onChange} id="name" name="name" />
-        //             {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
-        //         </div>
-        //         <div className="mb-3">
-        //             <label htmlFor="password" className="form-label">Password</label>
-        //             <input type="password" className="form-control" value={credentials.password} onChange={onChange} name="password" id="password" />
-        //         </div>
-
-        //         <button type="submit" className="btn btn-primary">Submit</button>
-        //     </form>
-        // </div>
+       
         <div className='custom'>
             <section className="form-section">
                 <div className="row">
