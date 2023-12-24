@@ -85,7 +85,7 @@ header {
 }
 
 .dis {
-  background-image: url("E:\AutomaticChildVaccinationAlert\src\components\vaccine.png");
+  background-image: url("../components/vaccine.png");
   background-size: cover;
   background-position: center;
   height: calc(120vh - 350px);

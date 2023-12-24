@@ -1,4 +1,3 @@
-// src/components/Card.js
 import React from "react";
 import "./Card.css"; // You can style your card in a separate CSS file.
 
