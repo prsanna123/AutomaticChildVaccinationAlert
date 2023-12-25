@@ -14,22 +14,32 @@
 }
 
 .card{
-  width: 80%;
+  width: 80%; 
     justify-content: center;
     margin-left: 10%;
     background-color: #efefef00;
-    border: #bcd8f1 1px solid !important;
+    /* border: #bcd8f1 1px solid !important; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.card.cust{
+  width: 40%;
+    justify-content: center;
+    margin-left: 30%;
+    /* background-color: #efefef00; */
+    /* border: #bcd8f1 1px solid !important; */
+}
+@media (max-width: 320px) {
+  .card.cust {
+      width: 60%;
+      margin-left: 25%;
+      justify-content: center; /* Set the width to 100% for smaller screens */
+  }
+}
+
+#mainheader{
+  color: #282c34;
 }
 
 .App-link {
@@ -38,7 +48,10 @@
 .custom.bg{
   
 }
-
+.btn{
+  justify-content: center;
+  width: 100%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -50,3 +63,13 @@
 body{
   background-color: #bcd8f1;
 }
+
+@media (min-width: 768px){
+
+  .ml-md-n5, .mx-md-n5 {
+    margin-left:0% !important;
+  }
+  }
+  .custom.row{
+    margin-left:10% !important;
+  }
