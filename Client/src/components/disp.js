@@ -3,11 +3,11 @@ import './login.css'; // Import
 export default function () {
   return (
     <div className='container'>    
-        <h1>Vaccination Alert</h1>
+        <h2>Vaccination Alert</h2>
 
     <div  className='dis'>
     </div><br></br>
-    <h1>Get vaccinated Stay Safe❤️</h1>
+    <h2>Get vaccinated Stay Safe❤️</h2>
     </div>
 
   )

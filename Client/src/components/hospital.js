@@ -1,109 +1,3 @@
-// import React, { useState } from 'react';
-// import {Link} from "react-router-dom"
-// function Hospital(props) {
-//   const [formData, setFormData] = useState({
-//     parentName: '',
-//     phoneNumber: '',
-//     birthDate: '',
-//     hospitalname:''
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({
-//       ...formData,
-//       [name]: value,
-//     });
-//   };
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     const {parentName,phoneNumber,birthDate,hospitalname}=formData
-//     const response=await fetch("http://localhost:5000/api/auth/addchild",{
-//       method:'POST',
-//       headers:{
-//         'Content-Type':'application/json'
-//       },
-//       body:JSON.stringify({hospitalname,parentName,phoneNumber,birthDate})
-//     })
-//     const json=await response.json()
-//     console.log(formData);
-//     console.log(json)
-//     if(json){
-//       props.showAlert("Added the child data successfully","success");
-//       setFormData({
-//         parentName:'',
-//         phoneNumber:'',
-//         birthDate: '',
-//         hospitalname:''
-//       })
-//       console.log("successfully added child data")
-//     }
-//     else{
-//       console.log("error occured in adding child data")
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h1>User Information Form</h1>
-//       <form onSubmit={handleSubmit}>
-//       <div>
-//           <label htmlFor="hospname">HospitalName:</label>
-//           <input
-//             type="text"
-//             id="hname"
-//             name="hospitalname"
-//             value={formData.hospitalname}
-//             onChange={handleChange}
-//             required
-//           />
-//         </div>
-
-//         <div>
-//           <label htmlFor="parentName">Parent's Name:</label>
-//           <input
-//             type="text"
-//             id="parentName"
-//             name="parentName"
-//             value={formData.parentName}
-//             onChange={handleChange}
-//             required
-//           />
-//         </div>
-//         <div>
-//           <label htmlFor="phoneNumber">Phone Number:</label>
-//           <input
-//             type="tel"
-//             id="phoneNumber"
-//             name="phoneNumber"
-//             value={formData.phoneNumber}
-//             onChange={handleChange}
-//             required
-//           />
-//         </div>
-//         <div>
-//           <label htmlFor="birthDate">Birthdate:</label>
-//           <input
-//             type="date"
-//             id="birthDate"
-//             name="birthDate"
-//             value={formData.birthDate}
-//             onChange={handleChange}
-//             required
-//           />
-//         </div>
-//         <button type="submit">Submit</button>
-//       </form>
-//       <Link to="/wel">
-//         <button>back</button>
-//       </Link>
-//     </div>
-//   );
-// }
-
-// export default Hospital;
-
 
 import React, { useState } from 'react';
 import { Link } from "react-router-dom"
@@ -129,11 +23,12 @@ function Hospital(props) {
       [name]: value,
     });
   };
-
+  // const host='http://localhost:5000'
+  const host='https://automatic-child-vaccination-alert-35ol.vercel.app'
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { parentName, phoneNumber, birthDate, hospitalname, bloodgroup, weight, email, address, age, surname, time } = formData
-    const response = await fetch("https://automatic-child-vaccination-alert-35ol.vercel.app/api/auth/addchild", {
+    const response = await fetch(`${host}/api/auth/addchild`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -192,41 +87,7 @@ function Hospital(props) {
               <br />
 
 
-              {/* <div>
-          <label htmlFor="parentName">Parent's Name:</label>
-          <input
-            type="text"
-            id="parentName"
-            name="parentName"
-            value={formData.parentName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="phoneNumber">Phone Number:</label>
-          <input
-            type="tel"
-            id="phoneNumber"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="birthDate">Birthdate:</label>
-          <input
-            type="date"
-            id="birthDate"
-            name="birthDate"
-            value={formData.birthDate}
-            onChange={handleChange}
-            required
-          />
-        </div> */}
-
-              {/* <form> */}
+        
               <h5 className='d-flex'>Parent Information :</h5><br />
               <div className="form-row">
                 <div className="form-group col-md-5">
@@ -382,7 +243,7 @@ function Hospital(props) {
               </div>
               <div className='row'>
                 <div className='col-7'></div>
-                <div className='col-5 d-flex justify-content-end'>
+                <div className='col-sm-4 d-flex justify-content-end'>
                   <div className='row '>
                     <div className='col-6'>
                       <button type="submit" className="btn btn-primary d-flex">
@@ -398,11 +259,7 @@ function Hospital(props) {
                 </div>
               </div>
 
-              {/* </form> */}
-
-              {/* </div> */}
-
-              {/* <button type="submit">Submit</button> */}
+            
             </form>
 
 

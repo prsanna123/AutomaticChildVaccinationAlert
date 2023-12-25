@@ -13,9 +13,9 @@ const WelcomePage = () => {
           <div className="card cust  border bg-light">
           <img className="card-img-top" src="https://imgs.search.brave.com/X5Wgrt6JCnMNXBtTELO-C11U6b_RAkwTLP0Pxac_nQE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LXBsdXMtMTQzOTcz/MS0xMjE0MzAzLnBu/Zz9mPXdlYnAmdz0x/Mjg" alt="Card image cap"/>
           <div className="card-body">
-            <p className="card-text bg-primary">Add the child's details</p>
+            <p className="card-text ">Add the child's details</p>
             <Link to="/childdata" className='bg-secondary'>
-                <button className='btn btn-danger'>Add Details</button>
+                <button className='btn btn-success'>Add Details</button>
               </Link>
           </div>
           </div>

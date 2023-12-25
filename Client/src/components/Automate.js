@@ -48,11 +48,12 @@ import React,{useContext,useEffect,useState} from 'react'
 // import noteContext from "../context/notes/noteContext"
 import {Link} from "react-router-dom"
 import Card from './Card';
-
+// const host='http://localhost:5000'
+const host='https://automatic-child-vaccination-alert-35ol.vercel.app'
 export default function Student(userData) {
     const [data,setData]=useState([]);
     useEffect(()=>{
-      fetch("https://automatic-child-vaccination-alert-35ol.vercel.app/api/child/getchilddata",{
+      fetch(`${host}/api/child/getchilddata`,{
         method:"GET",
       })
       .then((res)=>res.json())
@@ -65,7 +66,7 @@ export default function Student(userData) {
     return (
       <div>
         <div className="container">
-            <h1>  Parents Of Vaccination Alert Sent</h1>
+            <h3>  Parents Of Vaccination Alert Sent</h3>
               <div className="col-12">
                 
       
