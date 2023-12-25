@@ -17,8 +17,8 @@
   width: 80%;
     justify-content: center;
     margin-left: 10%;
-    /* background-color: #efefef00; */
-    /* border: #bcd8f1 1px solid !important; */
+    background-color: #efefef00;
+    border: #bcd8f1 1px solid !important;
 }
 
 .App-header {
@@ -30,18 +30,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.card.cust{
-  width: 30%;
-    justify-content: center;
-    margin-left: 10%;
-    /* background-color: #efefef00; */
-    /* border: #bcd8f1 1px solid !important; */
-}
-
-#mainheader{
-  color: #282c34;
 }
 
 .App-link {
@@ -62,13 +50,3 @@
 body{
   background-color: #bcd8f1;
 }
-
-@media (min-width: 768px){
-
-  .ml-md-n5, .mx-md-n5 {
-    margin-left:0% !important;
-  }
-  }
-  .custom.row{
-    margin-left:10% !important;
-  }
