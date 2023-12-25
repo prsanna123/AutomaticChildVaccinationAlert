@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './SignUp.css'; // Import the CSS file
 // const host='http://localhost:5000'
-const host='https://automatic-child-vaccination-alert-35ol.vercel.app/'
+const host='https://automatic-child-vaccination-alert-35ol.vercel.app'
 const SignUp = (props) => {
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" })
   let navigate = useNavigate();
