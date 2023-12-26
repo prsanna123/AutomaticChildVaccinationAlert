@@ -15,8 +15,8 @@ app.use('/sample',require('./routes/sample'))
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/child',require('./routes/auth'))
 const port=5000
-app.get('/pras',(req,res)=>{
-    res.send("hello prasanna")
+app.get('/',(req,res)=>{
+    res.send("This is the server for automatic child vaccination alert")
 })
 app.listen(port,()=>{
     console.log("app listening at port 5000")
