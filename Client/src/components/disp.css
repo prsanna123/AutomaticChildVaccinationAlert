@@ -1,0 +1,11 @@
+.dis {
+    background-image: url("../components/vaccine.png");
+    background-size: cover;
+    background-position: center;
+    height: 5ovh;
+    background-repeat: no-repeat;
+    /* Calculate the height of the form section minus header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
