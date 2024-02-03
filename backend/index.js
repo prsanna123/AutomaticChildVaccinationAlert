@@ -3,13 +3,13 @@ const app=express()
 const connectToMongo=require('./db')
 connectToMongo;
 var cors = require('cors')
-// app.use(cors())
+app.use(cors())
 app.use(express.json())
-app.use(cors({
-    origin:["https://automatic-child-vaccination-alert.vercel.app"],
-    methods:["POST","GET"],
-    credentials:true
-  }))
+// app.use(cors({
+//     origin:["https://automatic-child-vaccination-alert.vercel.app"],
+//     methods:["POST","GET"],
+//     credentials:true
+//   }))
 app.use('/api',require('./routes/form'))
 app.use('/sample',require('./routes/sample'))
 app.use('/api/auth',require('./routes/auth'))

@@ -7,7 +7,8 @@ const MessageState=()=>{
     const [Data,setdata]=useState(initial);
     const Ans = async()=>{
       // const [dat,setData]=useState([]);
-        const resp=await fetch(`https://automatic-child-vaccination-alert-35ol.vercel.app/api/child/getchilddata`,{
+        // const resp=await fetch(`https://automatic-child-vaccination-alert-35ol.vercel.app/api/child/getchilddata`,{
+          const resp=await fetch(`http://localhost:5000/api/child/getchilddata`,{
           method:'GET',
           headers:{
             'Content-Type':'application/json',

@@ -23,8 +23,8 @@ function Hospital(props) {
       [name]: value,
     });
   };
-  // const host='http://localhost:5000'
-  const host='https://automatic-child-vaccination-alert-35ol.vercel.app'
+  const host='http://localhost:5000'
+  // const host='https://automatic-child-vaccination-alert-35ol.vercel.app'
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { parentName, phoneNumber, birthDate, hospitalname, bloodgroup, weight, email, address, age, surname, time } = formData

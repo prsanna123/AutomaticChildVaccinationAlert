@@ -48,8 +48,8 @@ import React,{useContext,useEffect,useState} from 'react'
 // import noteContext from "../context/notes/noteContext"
 import {Link} from "react-router-dom"
 import Card from './Card';
-// const host='http://localhost:5000'
-const host='https://automatic-child-vaccination-alert-35ol.vercel.app'
+const host='http://localhost:5000'
+// const host='https://automatic-child-vaccination-alert-35ol.vercel.app'
 export default function Student(userData) {
     const [data,setData]=useState([]);
     useEffect(()=>{
